@@ -23,5 +23,8 @@ if SHIELD_DILEMMA_LEFT || SHIELD_DILEMMA_RIGHT
 
 config ZMK_SPLIT
 	default y
-	
+
+config ZMK_SPLIT_SERIAL
+	default y
+
 endif

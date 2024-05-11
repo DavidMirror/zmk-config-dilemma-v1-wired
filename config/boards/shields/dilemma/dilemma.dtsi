@@ -7,21 +7,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 
-//https://docs.zephyrproject.org/apidoc/latest/rpi-pico-rp2040-pinctrl_8h_source.html
-&pinctrl {
-    uart0_default: uart0_default {
-        group1 {
-            pinmux = <UART0_TX_P0>;
-            // pinmux = <NRF_FUN_UART_TX>;
-        };
-        group2 {
-            // pinmux = <NRF_FUN_UART_RX>;
-            pinmux = <UART0_RX_P1>;
-            input-enable;
-        };
-    };
-};
-
 &uart0 {
     status = "okay";
     current-speed = <115200>;

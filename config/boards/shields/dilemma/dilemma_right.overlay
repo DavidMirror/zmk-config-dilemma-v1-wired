@@ -6,6 +6,19 @@
  
 #include "dilemma.dtsi"
 
+//https://docs.zephyrproject.org/apidoc/latest/rpi-pico-rp2040-pinctrl_8h_source.html
+&pinctrl {
+    uart0_default: uart0_default {
+        group1 {
+            RP2040_PINMUX(1, RP2_PINCTRL_GPIO_FUNC_UART)
+        };
+        group2 {
+            RP2040_PINMUX(0, RP2_PINCTRL_GPIO_FUNC_UART)
+            input-enable;
+        };
+    };
+};
+
 &default_transform {
 	col-offset = <5>;
 };

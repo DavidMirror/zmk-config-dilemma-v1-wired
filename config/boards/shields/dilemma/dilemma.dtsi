@@ -10,10 +10,6 @@
 &pinctrl {
     uart0_default: uart0_default {
         group1 {
-            pinmux = <UART0_TX_P0>;
-            // RP2040_PINMUX(0, RP2_PINCTRL_GPIO_FUNC_UART)            
-        };
-        group2 {
             pinmux = <UART0_RX_P1>;
             // RP2040_PINMUX(0, RP2_PINCTRL_GPIO_FUNC_UART)            
             input-enable;
